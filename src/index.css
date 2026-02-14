@@ -179,3 +179,15 @@ p {
   line-height: 1;
   display: inline-block;
 }
+.title-with-heart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.heart-white {
+  font-size: 1em;
+  line-height: 1;
+}

@@ -6,9 +6,11 @@ function App() {
     <>
       <main className="container">
         <Corazones />
-        <h1 className="fade-title">
-          Feliz San Valentín🤍
+        <h1 className="fade-title title-with-heart">
+          <span>Feliz San Valentín</span>
+          <span className="heart-white">🤍</span>
         </h1>
+
         
         <h2 className="fade-subtitle">
           Algunos momentos 
