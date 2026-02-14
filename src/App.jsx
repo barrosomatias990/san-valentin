@@ -11,7 +11,8 @@ function App() {
         </h1>
         
         <h2 className="fade-subtitle">
-          Algunos momentos hermosos con vos <span className="emoji">💞</span>
+          Algunos momentos 
+          <br />hermosos con vos <span className="emoji">💞</span>
         </h2>
 
         <div className="zoom-photo">
