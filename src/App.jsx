@@ -1,55 +1,69 @@
+import BookFotos from "./BookFotos";
+import Corazones from "./Corazones";
+
 function App() {
   return (
-    <div className="container">
-      <h1>Feliz San Valentín🤍</h1>
+    <>
+      <main className="container">
+        <Corazones />
+        <h1 className="fade-title">
+          Feliz San Valentín🤍
+        </h1>
+        
+        <h2 className="fade-subtitle">
+          Algunos momentos hermosos con vos <span className="emoji">💞</span>
+        </h2>
 
-      <img src="/fotos/IMG_0674.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <p>Hermosa de mi vida, gracias por hacerme feliz en cada momento que estamos juntos, sos hermosa🤍</p>
-      <p>Te dejo algunos recuerdos de cuanto nos empezamos a ver</p>
+        <div className="zoom-photo">
+          <BookFotos
+            slides={[
+              { src: "/fotos/IMG_1836.jpg", texto: "El dia que te pedi que fueramos novios, un dia muy importante para los dos." },
+              { src: "/fotos/IMG_0674.jpg", texto: "El egreso de mi hermano, la pasamos super lindo" },
+              { src: "/fotos/FullSizeRender_Original.JPG", texto: "Foto gym, es la primer foto que subimos estando en el gym" },
+              { src: "/fotos/IMG_0292.jpg", texto: "Primer verano juntos, fue muy lindo y estuvimos en varios lugares, me encanto ese verano con vos" },
+              { src: "/fotos/IMG_0554_Original.jpg", texto: "Salida al cine, me invitaste vos amor de mi vida, me gusto mucho la película" },
+              { src: "/fotos/IMG_0624.jpg", texto: "Amor de mi vida mostrando su cara hermosa, me encantaaa" },
+              { src: "/fotos/IMG_1149.jpg", texto: "Primer San Valentin juntos, fuimos a potrerooo" },
+              { src: "/fotos/IMG_1256.jpg", texto: "Hermosa de mi vida, contenta cenando" },
+              { src: "/fotos/IMG_1675.jpg", texto: "Primer foto en el gym (quiero volver a esos momentos super lindos)" },
+              { src: "/fotos/IMG_1683.jpg", texto: "Hermosa de mi vida" },
+              { src: "/fotos/IMG_1712.jpg", texto: "Cumple de xv de mi prima, estuvo super lindo" },
+              { src: "/fotos/IMG_1837.jpg", texto: "Esta foto me encanta, muy felices a nada de convertirnos en novios💞" },
+              { src: "/fotos/IMG_1960.jpg", texto: "El amor de mi vida me hizo milanesas napolitanas con puré" },
+              { src: "/fotos/IMG_2176.jpg", texto: "Nuestro lugar para vernos siempre" },
+              { src: "/fotos/IMG_2373.jpg", texto: "Hermosa de mi corazón, siempre acompañandome en cada partido" },
+              { src: "/fotos/IMG_2995.jpg", texto: "Un dia lindo en tu casa que sacamos muchas fotossss" },
+              { src: "/fotos/IMG_0009.jpg", texto: "Sabias venir a casa a estar conmigo, super felices y contentos" },
+              { src: "/fotos/IMG_0285.jpg", texto: "Cumple de mi mami, hermosa de mi corazonnn" }
+            ]}
+          />
+        </div>
 
-      <img src="/fotos/IMG_0009.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Como olvidarme de las primeras veces que venias a casa, me encantaba verte sonreir y estar conmigo</p>
-
-      <img src="/fotos/IMG_0285.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Para el cumple de mi mami, las cosas estaban empezando a ser lindas de nuevo</p>
-
-      <img src="/fotos/IMG_0292.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Un gran verano, donde disfrutamos monton de cosas lindas</p>
-
-      <img src="/fotos/IMG_1675.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Nuestra primer foto juntos en el gym, un momento que estuve esperando por mucho tiempo. Me encanto</p>
-      
-      <img src="/fotos/IMG_1683.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Una de las ultimas fotos que nos sacamos, me encanta verte feliz, TE AMOOOO AMOR DE MI VIDA</p>
-      
-      <img src="/fotos/IMG_1837.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Esta foto es muy importante, porque fue un rato antes de que te pidiera que fueses mi novia. Amo esta foto</p>
-      
-      <img src="/fotos/IMG-20251219-WA0030.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Hermosa de mi vida, sos todo lo que esta bien. Sos preciosa mi amorrrr</p>
-      
-      <img src="/fotos/IMG_2995.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Fotos random que nos sacamos en tu casa, me encanta estarrrr con vosssss</p>
-      
-      <img src="/fotos/IMG_2373.jpg" style= {{height: "70vh", alignContent: "center", alignItems: "center"}} ></img>
-      <br />
-      <p>Antes de ir a jugar, Gracias por acompañarme siempre, sos el amor de mi vida</p>
-      <br /><br />
-      <p>Gracias por aparecer en mi vida</p>
-      <p>No te das una idea lo feliz que soy con vos</p>
-      <p>Te amo para toda la vida</p>
-      <p>Matias Barroso</p>
-      
-    </div>
-  )
+        <div className="card">
+          <h2>Feliz San Valentín, mi amorrr 💘</h2>
+          <p>Hoy es nuestro segundo San Valentín juntos.</p>
+          <p>
+          Un año más a tu lado, lleno de momentos hermosos, de abrazos, de risas y de mucho amor.
+          Gracias por aparecer en mi vida y hacerme tan feliz cada día.
+          </p>
+          <p>
+          No te das una idea de lo feliz que soy con vos.
+          Sos mi vida entera, mi lugar seguro, mi lugar favorito y la razón de tantas sonrisas.
+          </p>
+          <p>
+          Amo cada momento a tu lado, cada charla, cada abrazo y cada pequeño detalle.
+          </p>
+          <p>
+          Por muchos 14 de febrero juntos, por más recuerdos, por más amor y por toda una vida compartida.
+          </p>
+          <p>
+          Te amo para toda la vida.
+          </p>
+          <p class="firma">Matias Barroso</p>
+        </div>
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
