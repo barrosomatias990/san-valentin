@@ -154,8 +154,7 @@ p {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 2.6rem;
-    white-space: normal;
+    font-size: 2.4rem;
   }
 }
 
@@ -179,21 +178,22 @@ p {
   line-height: 1;
   display: inline-block;
 }
+
+
 .title-with-heart {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  flex-wrap: nowrap;      /* 🔑 NO se rompe de línea */
-}
 
-.title-text {
-  white-space: nowrap;    /* texto en una sola línea */
+  /* 🔑 clave */
+  white-space: nowrap;
+  text-align: center;
 }
 
 .heart-white {
   font-size: 1em;
   line-height: 1;
-  margin-top: 2px;        /* ajuste fino vertical */
+  margin-top: 2px;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
